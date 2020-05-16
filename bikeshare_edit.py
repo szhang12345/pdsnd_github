@@ -142,6 +142,18 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('*'*50)
 
+def popular_trip(df):
+    '''Finds and prints the most popular trip.
+    Args:
+        bikeshare dataframe
+    Returns:
+        none
+    '''
+    pd.set_option('max_colwidth', 100)
+    df['journey'] = df['Start Station'].str.cat(df['End Station'], sep=' to ')
+    most_pop_trip = df['journey'].mode().to_string(index = False)
+    # The 'journey' column is created in the statistics() function.
+    print('The most popular trip is {}.'.format(most_pop_trip))
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -247,6 +259,7 @@ def main():
 
         time_stats(df, month, day)
         station_stats(df)
+        popular_trip(df)
         trip_duration_stats(df)
         user_stats(df)
 
