@@ -37,7 +37,7 @@ def get_filters():
             city = input('Sorry, I don\'t understand, please enter the correct city: ').lower()
            
     # user input for month (all, january, february, ... , june)
-    month = input('\nWhich month do you want to review? Please type in january, february, march, april, may, or june?\n').lower()
+    month = input('\nWhich month do you want to review? Please type in January, February, March, April, May, or June?\n').lower()
      
 
     while(True):
@@ -47,7 +47,7 @@ def get_filters():
             month = input('Sorry, I don\'t understand, please enter the correct month\n').lower()
     
     # user input for day of week (all, monday, tuesday, ... sunday)
-    day =  input('Which day do you want to review? monday, tuesday, wednesday, thursday, friday, saturday , sunday or all to display data of all days?\n').lower()
+    day =  input('Which day do you want to review? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday , Sunday or all to display data of all days?\n').lower()
    
 
     while(True):
