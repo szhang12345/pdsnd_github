@@ -2,7 +2,7 @@
 May 16, 2020
 
 ### Project Title
-Explore US Bikeshare 
+Explore US Bikeshare Dataset
 
 ### Description
 This project is Project 2 of Udacity's Data Analyst Nanodegree (DAND) and is used to make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. It uses codes to import the data and answer interesting questions about it by computing descriptive statistics. It also writes a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
