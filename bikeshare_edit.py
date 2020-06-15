@@ -25,7 +25,7 @@ def get_filters():
     """
     print('\nHello! Let\'s explore some US bikeshare data!')
 
-    #lower is used to get input in any format
+    # is used to get input in any format
     # user input for city (chicago, new york, washington)
     city = input('\nWould you like to see data for Chicago, New York, or Washington?\n').lower()
     
